@@ -1,0 +1,10 @@
+{
+    "name": "node-dogecoin",
+    "version": "0.3.3",
+    "description": "DogeCoin client",
+    "keywords": ["dogecoin"],
+    "repository": "git://github.com/countable/node-dogecoin.git",
+    "author": "Clark Van Oyen <clark@countable.ca>",
+    "main": "lib/dogecoin.js",
+    "engines": { "node": ">= 0.4.0" }
+}
