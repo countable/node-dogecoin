@@ -39,10 +39,6 @@ var dogecoin = require('dogecoin')()
 
 dogecoin
 .auth('MyUserName', 'mypassword')
-.set('host', '127.0.0.1')
-.set({
-    port:22555
-})
 .getNewAddress()
 .getBalance()
 ```
