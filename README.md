@@ -20,7 +20,7 @@ Then, install the dogecoin NPM package.
 ## Example
 
 ```js
-var dogecoin = require('dogecoin')()
+var dogecoin = require('node-dogecoin')()
 
 dogecoin.auth('myusername', 'mypassword')
 
