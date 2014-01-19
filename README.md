@@ -11,11 +11,11 @@ node-dogecoin is a Dogecoin client for Node.JS. It is a fork of the excellent ht
 
 ## Dependencies
 
-You'll need a running instance of dogecoind to connect with. If you're running Debian/Ubuntu, this worked for me: http://www.dogeco.in/wiki/index.php/Dogecoind
+You'll need a running instance of [dogecoind](https://github.com/dogecoin/dogecoin) to connect with. If you're running Debian/Ubuntu, this worked for me: http://www.dogeco.in/wiki/index.php/Dogecoind
 
-Then, install the dogecoin NPM package.
+Then, install the node-dogecoin NPM package.
 
-`npm install dogecoin`
+`npm install node-dogecoin`
 
 ## Example
 
