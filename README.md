@@ -47,7 +47,7 @@ dogecoin
 
 TODO: Verify and test with Dogecoin.
 
-The [Bitcoin API](https://github.com/Weltschmerz/Kapitalize#commands) is supported as direct methods. Use either camelcase or lowercase.
+The [Litecoin API](https://litecoin.info/Litecoin_API) is supported as direct methods. Use either camelcase or lowercase.
 
 ```js
 dogecoin.getNewAddress(function(err, address) {
