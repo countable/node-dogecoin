@@ -17,9 +17,9 @@ Then, install the node-dogecoin NPM package.
 
 `npm install node-dogecoin`
 
-## Example
+## Examples
 
-For more examples, see [this](https://github.com/brotchie/dogecoin-code-snippets) and [this](https://github.com/countable/dogelet).
+Some code examples follow below, but for more complete examples, see [these snippets](https://github.com/brotchie/dogecoin-code-snippets) and [this example wallet app](https://github.com/countable/dogelet).
 
 ```js
 var dogecoin = require('node-dogecoin')()
@@ -47,7 +47,7 @@ dogecoin
 
 ## Methods
 
-TODO: Verify and test with Dogecoin.
+TODO: Write tests for these.
 
 The [Litecoin API](https://litecoin.info/Litecoin_API) is supported as direct methods. Use either camelcase or lowercase.
 
@@ -93,7 +93,7 @@ Generates authorization header, returns `this` for chainability
 
 ## Commands
 
-TODO: Verify and test these with Dogecoin.
+TODO: Write tests for these.
 
 All [Bitcoin API](https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list) commands are supported, in lowercase or camelcase form.
 
