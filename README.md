@@ -95,7 +95,7 @@ Generates authorization header, returns `this` for chainability
 
 TODO: Write tests for these.
 
-All [Bitcoin API](https://en.bitcoin.it/wiki/Original_Bitcoin_client/API_Calls_list) commands are supported, in lowercase or camelcase form.
+All [Litecoin API](https://litecoin.info/Litecoin_API) commands are supported, in lowercase or camelcase form.
 
 <table>
 <tr>
