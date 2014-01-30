@@ -458,3 +458,49 @@ Available options and default values:
 + port *22555*
 + user
 + pass
++ passphrasecallback
+
+### Passphrase Callback
+
+With an encryped wallet, any operation that accesses private keys requires a wallet unlock. A wallet is unlocked using the `walletpassphrase <passphrase> <timeout>` JSON-RPC method: the wallet will relock after `timeout` seconds.
+
+You may pass an optional function `passphrasecallback` to the `node-dogecoin` initialization function to manage wallet unlocks. `passphrasecallback` should be a function accepting three arguments:
+
+    function(command, args, callback) {}
+
++ **command** is the command that failed due to a locked wallet.
++ **args** is the arguments for the failed command.
++ **callback** is a typical node-style continuation callback of the form `function(err, passphrase, timeout) {}`. Call callback with the wallet passphrase and desired timeout from within your passphrasecallback to unlock the wallet.
+
+You may hard code your passphrase (not recommended) as follows:
+
+```js
+var dogecoin = require('dogecoin')({
+    passphrasecallback: function(command, args, callback) {
+        callback(null, 'passphrase', 30);
+    }
+})
+```
+
+Because `passphrasecallback` is a continuation, you can retrieve the passphrase in an asynchronous manner. For example, by prompting the user:
+
+```js
+var readline = require('readline')
+
+var rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
+
+var dogecoin = require('dogecoin')({
+  passphrasecallback: function(command, args, callback) {
+    rl.question('Enter passphrase for "' + command + '" operation: ', function(passphrase) {
+      if (passphrase) {
+        callback(null, passphrase, 1)
+      } else {
+        callback(new Error('no passphrase entered'))
+      }
+    })
+  }
+})
+```
