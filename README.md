@@ -460,11 +460,11 @@ Available options and default values:
 + pass
 + passphrasecallback
 
-### Passphrase
+### Passphrase Callback
 
-When a wallet is encrypted, any operations that access private keys require the wallet to be unlocked. The wallet is unlocked using the `walletpassphrase <passphrase> <timeout>` JSON-RPC method with the passphrase and a timeout specified. The wallet will relock after this timeout.
+With an encryped wallet, any operation that accesses private keys requires a wallet unlock. A wallet is unlocked using the `walletpassphrase <passphrase> <timeout>` JSON-RPC method: the wallet will relock after `timeout` seconds.
 
-You may pass an optional function `passphrasecallback` to the initialization function to handle unlocking the wallet. `passphrasecallback` should be a function accepting three arguments:
+You may pass an optional function `passphrasecallback` to the `node-dogecoin` initialization function to manage wallet unlocks. `passphrasecallback` should be a function accepting three arguments:
 
     function(command, args, callback) {}
 
