@@ -494,7 +494,7 @@ var rl = readline.createInterface({
 
 var dogecoin = require('dogecoin')({
   passphrasecallback: function(command, args, callback) {
-    rl.question('Enter Passphrase: ', function(passphrase) {
+    rl.question('Enter passphrase for "' + command + '" operation: ', function(passphrase) {
       if (passphrase) {
         callback(null, passphrase, 1)
       } else {
