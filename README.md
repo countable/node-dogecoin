@@ -37,7 +37,7 @@ dogecoin.getDifficulty(function() {
 Pretty much everything is chainable.
 
 ```js
-var dogecoin = require('dogecoin')()
+var dogecoin = require('node-dogecoin')()
 
 dogecoin
 .auth('MyUserName', 'mypassword')
