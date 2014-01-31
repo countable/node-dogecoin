@@ -511,13 +511,13 @@ var dogecoin = require('node-dogecoin')({
 
 ### Secure RPC with SSL
 
-By default `dogecoind` exposes its JSON-RPC interface via HTTP; that is, all RPC commands are transmitted in plain text across the network! To secure the JSON-RPC channel you can supply `dogecoind` with a self-signed SSL certificate and associated private key to example HTTPS, for example in your `dogecoin.conf`:
+By default `dogecoind` exposes its JSON-RPC interface via HTTP; that is, all RPC commands are transmitted in plain text across the network! To secure the JSON-RPC channel you can supply `dogecoind` with a self-signed SSL certificate and an associated private key to enable HTTPS. For example, in your `dogecoin.conf`:
 
     rpcssl=1
     rpcsslcertificatechainfile=/etc/ssl/certs/dogecoind.crt
     rpcsslprivatekeyfile=/etc/ssl/private/dogecoind.pem
 
-In order to securely access an SSL encrypted JSON-RPC interface you need a copy the self-signed certificate from the server: in this case `dogecoind.crt`. Pass your self-signed certificate in the `ca` option and set `https: true` and then use node-dogecoin as usual.
+In order to securely access an SSL encrypted JSON-RPC interface you need a copy of the self-signed certificate from the server: in this case `dogecoind.crt`. Pass your self-signed certificate in the `ca` option and set `https: true` and node-dogecoin is secured!
     
 ```js
 var fs = require('fs')
