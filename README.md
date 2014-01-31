@@ -461,6 +461,8 @@ Available options and default values:
 + user
 + pass
 + passphrasecallback
++ https
++ ca
 
 ### Passphrase Callback
 
@@ -477,7 +479,7 @@ You may pass an optional function `passphrasecallback` to the `node-dogecoin` in
 You may hard code your passphrase (not recommended) as follows:
 
 ```js
-var dogecoin = require('dogecoin')({
+var dogecoin = require('node-dogecoin')({
     passphrasecallback: function(command, args, callback) {
         callback(null, 'passphrase', 30);
     }
@@ -494,7 +496,7 @@ var rl = readline.createInterface({
   output: process.stdout
 })
 
-var dogecoin = require('dogecoin')({
+var dogecoin = require('node-dogecoin')({
   passphrasecallback: function(command, args, callback) {
     rl.question('Enter passphrase for "' + command + '" operation: ', function(passphrase) {
       if (passphrase) {
@@ -506,3 +508,27 @@ var dogecoin = require('dogecoin')({
   }
 })
 ```
+
+### Secure RPC with SSL
+
+By default `dogecoind` exposes its JSON-RPC interface via HTTP; that is, all RPC commands are transmitted in plain text across the network! To secure the JSON-RPC channel you can supply `dogecoind` with a self-signed SSL certificate and an associated private key to enable HTTPS. For example, in your `dogecoin.conf`:
+
+    rpcssl=1
+    rpcsslcertificatechainfile=/etc/ssl/certs/dogecoind.crt
+    rpcsslprivatekeyfile=/etc/ssl/private/dogecoind.pem
+
+In order to securely access an SSL encrypted JSON-RPC interface you need a copy of the self-signed certificate from the server: in this case `dogecoind.crt`. Pass your self-signed certificate in the `ca` option and set `https: true` and node-dogecoin is secured!
+    
+```js
+var fs = require('fs')
+
+var ca = fs.readFileSync('dogecoind.crt')
+
+var dogecoin = require('node-dogecoin')({
+  user: 'rpcusername',
+  pass: 'rpcpassword',
+  https: true,
+  ca: ca
+})
+```
+
