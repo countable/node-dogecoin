@@ -47,8 +47,6 @@ dogecoin
 
 ## Methods
 
-TODO: Write tests for these.
-
 The [Litecoin API](https://litecoin.info/Litecoin_API) is supported as direct methods. Use either camelcase or lowercase.
 
 ```js
