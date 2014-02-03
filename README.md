@@ -19,7 +19,7 @@ Then, install the node-dogecoin NPM package.
 
 ## Examples
 
-Some code examples follow below, but for more complete examples, see [these snippets](https://github.com/brotchie/dogecoin-code-snippets). I also wrote a [wallet app](https://github.com/countable/dogelet) to test this module.
+Some code examples follow below, but for more complete examples, see [these snippets](https://github.com/brotchie/dogecoin-code-snippets), or this [wallet app](https://github.com/countable/dogelet) which was created to to test this module.
 
 ```js
 var dogecoin = require('node-dogecoin')()
