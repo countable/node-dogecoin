@@ -1,12 +1,12 @@
-# A Node.JS DogeCoin Client!
+# A Node.js DogeCoin Client!
 
 ![DogeCoin](https://raw2.github.com/countable/node-dogecoin/master/node-dogecoin.png)
 
-node-dogecoin is a Dogecoin client for Node.JS. It is a fork of the excellent [Kapitalize Client](http://github.com/Weltschmerz/Kapitalize.git) intended for use with Dogecoin. The purpose of this repository is:
+node-dogecoin is a Dogecoin client for Node.js. It is a fork of the excellent [Kapitalize Client](http://github.com/Weltschmerz/Kapitalize.git) intended for use with Dogecoin. The purpose of this repository is:
 
-* Provide a one-stop resource for the Node.JS developer to get started with Dogecoin integration.
+* Provide a one-stop resource for the Node.js developer to get started with Dogecoin integration.
 * Prevent would-be Dogecoin web developers worrying whether a Bitcoin client will work out of the box.
-* Promote Node.JS development of Dogecoin web apps.
+* Promote Node.js development of Dogecoin web apps.
 * Identify and address any incompatibilities with the Dogecoin and Bitcoin APIs that exist now and/or in the future.
 
 ## Dependencies
