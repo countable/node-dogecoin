@@ -17,6 +17,10 @@ Then, install the node-dogecoin NPM package.
 
 `npm install node-dogecoin`
 
+## Bounties
+
+Donations will be used for bounties . When we reach 50K DOGE donated, that will be used as a bounty to write a unit test suite. Here's the donation address DE4isu3m2RBma7nGEwnaX8cu4Y2m2J2g8Q .
+
 ## Examples
 
 Some code examples follow below, but for more complete examples, see [these snippets](https://github.com/brotchie/dogecoin-code-snippets), or this [wallet app](https://github.com/countable/dogelet) which was created to to test this module.
