@@ -19,7 +19,7 @@ Then, install the node-dogecoin NPM package.
 
 ## Bounties
 
-Donations will be used for bounties . When we reach 50K DOGE donated, that will be used as a bounty to write a unit test suite. Here's the donation address DE4isu3m2RBma7nGEwnaX8cu4Y2m2J2g8Q .
+Donations will be used for bounties. When we reach 50K DOGE donated, that will be used as a bounty to write a unit test suite. Here's the donation address DE4isu3m2RBma7nGEwnaX8cu4Y2m2J2g8Q . I encourage all GitHub repository owners to post a donation address so their community can easily support development financially.
 
 ## Examples
 
