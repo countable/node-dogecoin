@@ -21,7 +21,7 @@ Then, install the node-dogecoin NPM package.
 
 [Dogecoin](http://www.dogecoin.com) donation address is DE4isu3m2RBma7nGEwnaX8cu4Y2m2J2g8Q
 
-Donations in [dogecoin](http://www.dogecoin.com) will be used for bounties. The first bounty will be awarded for creating a unit test suite. As a side note: I encourage all GitHub repository owners to post a donation address so their community can easily support development financially.
+Donations in [dogecoin](http://www.dogecoin.com) will be used for bounties. The first bounty will be awarded for creating a unit test suite. As a side note: I encourage all GitHub repository owners to post a donation address so their community can easily support development financially. If you do so [http://www.reddit.com/r/dogecoindev/comments/203ojs/add_a_dogecoin_donation_link_in_your_github_repo/](I'll send you a reward!)
 
 ## Examples
 
