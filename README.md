@@ -17,12 +17,6 @@ Then, install the node-dogecoin NPM package.
 
 `npm install node-dogecoin`
 
-## Bounties
-
-[Dogecoin](http://www.dogecoin.com) donation address is DE4isu3m2RBma7nGEwnaX8cu4Y2m2J2g8Q
-
-Donations in [dogecoin](http://www.dogecoin.com) will be used for bounties. The first bounty will be awarded for creating a unit test suite. As a side note: I encourage all GitHub repository owners to post a donation address so their community can easily support development financially. If you accept donations at your repository, [I'll send you a reward!](http://www.reddit.com/r/dogecoindev/comments/203ojs/add_a_dogecoin_donation_link_in_your_github_repo/)
-
 ## Examples
 
 Some code examples follow below, but for more complete examples, see [these snippets](https://github.com/brotchie/dogecoin-code-snippets), or this [wallet app](https://github.com/countable/dogelet) which was created to to test this module.
@@ -535,4 +529,18 @@ var dogecoin = require('node-dogecoin')({
   ca: ca
 })
 ```
+
+## Testing
+
+```
+nodunit test/test-node-dogecoin.js
+```
+
+## Bounties
+
+[Dogecoin](http://www.dogecoin.com) donation address is DE4isu3m2RBma7nGEwnaX8cu4Y2m2J2g8Q
+
+Donations in [dogecoin](http://www.dogecoin.com) will be used for bounties. The first bounty will be awarded for creating a unit test suite. As a side note: I encourage all GitHub repository owners to post a donation address so their community can easily support development financially. If you accept donations at your repository, [I'll send you a reward!](http://www.reddit.com/r/dogecoindev/comments/203ojs/add_a_dogecoin_donation_link_in_your_github_repo/)
+
+
 
