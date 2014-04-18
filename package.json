@@ -1,6 +1,6 @@
 {
     "name": "node-dogecoin",
-    "version": "0.3.7",
+    "version": "0.3.9",
     "description": "DogeCoin client",
     "keywords": ["dogecoin"],
     "repository": "git://github.com/countable/node-dogecoin.git",
