@@ -9,8 +9,5 @@
     "engines": { "node": ">= 0.4.0" },
     "devDependencies": {
         "nodeunit": "*"
-    },
-    "scripts": {
-        "preinstall": "npm i -g nodeunit"
     }
 }

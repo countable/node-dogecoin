@@ -533,7 +533,9 @@ var dogecoin = require('node-dogecoin')({
 ## Testing
 
 ```
-nodunit test/test-node-dogecoin.js
+npm install -g nodeunit
+
+nodeunit test/test-node-dogecoin.js
 ```
 
 ## Bounties
