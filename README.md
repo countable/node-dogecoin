@@ -1,6 +1,6 @@
 # A Node.js DogeCoin Client!
 
-![DogeCoin](https://raw2.github.com/countable/node-dogecoin/master/node-dogecoin.png)
+![DogeCoin](https://raw.githubusercontent.com/countable/node-dogecoin/master/node-dogecoin.png)
 
 node-dogecoin is a Dogecoin client for Node.js. It is a fork of the excellent Kapitalize Bitcoin Client (now removed from GitHub) intended for use with Dogecoin. The purpose of this repository is:
 
